@@ -1,6 +1,9 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 # Programme servant à compter le nombre d'occurences
 # d'une lettre dans un texte
-msg = "ceci est un message test"
+from operator import itemgetter
 
 def calcul(msg) :
     # tab = [[lettre, occcurence], [lettre, occurence], ...]
@@ -13,14 +16,23 @@ def calcul(msg) :
                 existInTab = True
         if not existInTab:
             tab.append([msg[i], 1])
-    print(tab)
-    print("Longueur totale de la string : ", len(msg));
-# calcul(msg)
+    return tab
+
+def writeProba(strlength, tab):
+    for i in range(0, len(tab)):
+        tab[i].append(tab[i][1]/strlength)
+    return tab
+
+def printtab(tab):
+    for elt in tab:
+        print(elt);
 
 def openFile():
-    f = open(".\\test.TXT")
+    f = open(".\\zola.txt", encoding="utf-8")
     print(f)
     texte = f.read()
-    print(texte)
+    tab = writeProba(len(texte), calcul(texte))
+    tab = sorted(tab, key=lambda x: -x[1])
+    printtab(tab)
     f.close()
 openFile()
