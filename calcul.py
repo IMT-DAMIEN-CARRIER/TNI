@@ -49,4 +49,16 @@ def openFile():
     printtab(tab)
     f.close()
 
-openFile()
+# openFile()
+
+def openRawFile():
+    f = open(".\\lena_gray.raw", encoding="utf-8")
+    texte = f.read()
+    tabTexte = texte.split(" ")
+    print(tabTexte)
+    tab = writeProba(len(tabTexte), calcul(tabTexte))
+    tab = sorted(tab, key=lambda x: -x[1])
+    printtab(tab)
+    f.close()
+
+openRawFile()
