@@ -14,8 +14,6 @@ Pour cette partie nous avons décidé de parcourir le texte pour regarder chaque
 
 - Si il est déjà présent on incrémente de 1 sa présence
 
-- 
-
 De cette manière nous pouvons avoir un tableau dynamique pour lire n'importe quel texte qui nous génère un alphabet aléatoire et personnalisé en fonction du texte entrée. 
 
 Ensuite grace au compteur et la présence d'un caractère dans le texte on pourra calculer la probabilité, arrondi à 10<sup>-6</sup>, d'avoir ce caractère ainsi que l'entropie de l'alphabet générée.
@@ -23,32 +21,7 @@ Ensuite grace au compteur et la présence d'un caractère dans le texte on pourr
 #### 1. Code
 
 ```python
-# Programme servant à compter le nombre d'occurences
-# d'une lettre dans un texte
-msg = "ceci est un message test"
 
-def calcul(msg) :
-    # tab = [[lettre, occcurence], [lettre, occurence], ...]
-    tab = []
-    for i in range(0, len(msg)):
-        existInTab = False
-        for j in range(0, len(tab)):
-            if msg[i] == tab[j][0]:
-                tab[j][1] += 1
-                existInTab = True
-        if not existInTab:
-            tab.append([msg[i], 1])
-    print(tab)
-    print("Longueur totale de la string : ", len(msg));
-# calcul(msg)
-
-def openFile():
-    f = open(".\\test.TXT")
-    print(f)
-    texte = f.read()
-    print(texte)
-    f.close()
-openFile()
 ```
 
 #### 2. Probabilité d'occurence de chaque lettre de l'alphabée
