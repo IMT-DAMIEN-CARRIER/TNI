@@ -1,8 +1,8 @@
-# <center>Traitement Numérique de l'Information</center>
+# <div style="text">Traitement Numérique de l'Information</div>
 
-## <center>Projet 1</center>
+## <div style="text-align: center">Projet 1</div>
 
-### <center>Louise Robert - Alex Broussard - Damien Carrier</center>
+### <div sytle="text-align: center">Louise Robert - Alex Broussard - Damien Carrier</div>
 
 
 
