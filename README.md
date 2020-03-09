@@ -24,7 +24,26 @@ Ensuite grace au compteur et la présence d'un caractère dans le texte on pourr
 
 #### 1. Code
 
+```python
+
+```
+
 #### 2. Probabilité d'occurence de chaque lettre de l'alphabée
+
+Voici ce que retourne le tableau *(nous avons choisi de ne mettre que les première lignes du tableau afin de simplifier la présentation)*
+
+[caractère, Nb occurence, probabilité]
+
+[' ', 3971, 0.16616453259687003]
+['e', 2860, 0.11967528663486485]
+['s', 1666, 0.06971294669009959]
+['n', 1416, 0.05925182023600301]
+['a', 1297, 0.05427232404385304]
+['t', 1264, 0.052891455351912295]
+['i', 1203, 0.05033894049711273]
+['u', 1187, 0.04966942840405055]
+['r', 1174, 0.04912544982843753]
+['o', 1022, 0.042765084944346804]
 
 #### 3. Entropie de l'alphabée
 
