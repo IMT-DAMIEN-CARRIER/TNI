@@ -18,9 +18,9 @@ Pour cette partie nous avons décidé de parcourir le texte pour regarder chaque
 
 - On incrémente de 1 un compteur pour avoir le nombre total de caractère dans le texte.
 
-De cette manière nous pouvons avoir un tableau dynamique pour lire n'importe quel texte. 
+De cette manière nous pouvons avoir un tableau dynamique pour lire n'importe quel texte qui nous génère un alphabet aléatoire et personnalisé en fonction du texte entrée. 
 
-Ensuite grace au compteur et la présence d'un caractère dans le texte on pourra calculer la probabilité d'avoir un caractère ainsi que l'entropie.
+Ensuite grace au compteur et la présence d'un caractère dans le texte on pourra calculer la probabilité, arrondi à 10<sup>-6</sup>, d'avoir ce caractère ainsi que l'entropie de l'alphabet générée.
 
 #### 1. Code
 
