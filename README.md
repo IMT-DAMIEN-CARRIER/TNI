@@ -10,6 +10,18 @@
 
 #### 0. Introduction
 
+Pour cette partie nous avons décidé de parcourir le texte pour regarder chaque caractère. Nous initialisons un tableau de la manière suivant : 
+
+- Si le nouveau caractère n'existe pas dans le tableau on le rajoute et on initialise le nombre de fois ou il est présent à 1.
+
+- Si il est déjà présent on incrémente de 1 sa présence de 1
+
+- On incrémente de 1 un compteur pour avoir le nombre total de caractère dans le texte.
+
+De cette manière nous pouvons avoir un tableau dynamique pour lire n'importe quel texte. 
+
+Ensuite grace au compteur et la présence d'un caractère dans le texte on pourra calculer la probabilité d'avoir un caractère ainsi que l'entropie.
+
 #### 1. Code
 
 #### 2. Probabilité d'occurence de chaque lettre de l'alphabée
