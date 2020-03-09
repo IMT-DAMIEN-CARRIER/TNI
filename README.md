@@ -53,4 +53,8 @@ Voici ce que retourne le tableau *(nous avons choisi de ne mettre que les premi�
 
 #### 1. Code
 
+Nous avons réutilisé le même algorithme qu'à la partie 1, en changeant juste la variable d'entrée de la fonction pour un tableau dans lequel chaque élément est une valeur de l'image RAW.
+
 #### 2. Estimation de l'entropie et comparaison avec celle du texte
+
+D'après nos calculs, l'entropie de l'image est d'environ 7,45.
