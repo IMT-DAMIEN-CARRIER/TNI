@@ -4,8 +4,6 @@
 
 ###### Louise Robert - Alex Broussard - Damien Carrier
 
-
-
 ### I. Entropie d'un texte
 
 #### 0. Introduction
@@ -14,9 +12,9 @@ Pour cette partie nous avons décidé de parcourir le texte pour regarder chaque
 
 - Si le nouveau caractère n'existe pas dans le tableau on le rajoute et on initialise le nombre de fois ou il est présent à 1.
 
-- Si il est déjà présent on incrémente de 1 sa présence de 1
+- Si il est déjà présent on incrémente de 1 sa présence
 
-- On incrémente de 1 un compteur pour avoir le nombre total de caractère dans le texte.
+- 
 
 De cette manière nous pouvons avoir un tableau dynamique pour lire n'importe quel texte qui nous génère un alphabet aléatoire et personnalisé en fonction du texte entrée. 
 
@@ -25,7 +23,32 @@ Ensuite grace au compteur et la présence d'un caractère dans le texte on pourr
 #### 1. Code
 
 ```python
+# Programme servant à compter le nombre d'occurences
+# d'une lettre dans un texte
+msg = "ceci est un message test"
 
+def calcul(msg) :
+    # tab = [[lettre, occcurence], [lettre, occurence], ...]
+    tab = []
+    for i in range(0, len(msg)):
+        existInTab = False
+        for j in range(0, len(tab)):
+            if msg[i] == tab[j][0]:
+                tab[j][1] += 1
+                existInTab = True
+        if not existInTab:
+            tab.append([msg[i], 1])
+    print(tab)
+    print("Longueur totale de la string : ", len(msg));
+# calcul(msg)
+
+def openFile():
+    f = open(".\\test.TXT")
+    print(f)
+    texte = f.read()
+    print(texte)
+    f.close()
+openFile()
 ```
 
 #### 2. Probabilité d'occurence de chaque lettre de l'alphabée
@@ -58,5 +81,3 @@ Voici ce que retourne le tableau *(nous avons choisi de ne mettre que les premi�
 #### 1. Code
 
 #### 2. Estimation de l'entropie et comparaison avec celle du texte
-
-
