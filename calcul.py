@@ -41,7 +41,7 @@ def printtab(tab):
 
 
 def openFile():
-    f = open(".\\zola.txt", encoding="utf-8")
+    f = open(".\\exemple1.txt", encoding="utf-8")
     print(f)
     texte = f.read()
     tab = writeProba(len(texte), calcul(texte))
