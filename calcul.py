@@ -15,4 +15,12 @@ def calcul(msg) :
             tab.append([msg[i], 1])
     print(tab)
     print("Longueur totale de la string : ", len(msg));
-calcul(msg)
+# calcul(msg)
+
+def openFile():
+    f = open(".\\test.TXT")
+    print(f)
+    texte = f.read()
+    print(texte)
+    f.close()
+openFile()
