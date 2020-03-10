@@ -62,6 +62,7 @@ L'unité de notre entropie est : bits d'info/caractère.
 
 ```bash
 L'entropie de notre image est de :  7,445552485185619
+
 [amplitude pixel, Nb occurence, probabilité]
 ['120', 2723, 0.010387381029582865]
 ['11', 2690, 0.01026149650002861]
@@ -74,8 +75,6 @@ L'entropie de notre image est de :  7,445552485185619
 ```
 
 Un pixel à une entropie moyenne de 7,4455... hors un pixel est sur 2 dimensions, pour pouvoir comparer avec l'alphabet il nous faut diviser par 2 ce resultat pour être homogène.
-
-
 
 ```bash
 résultat : 3.72277624259281
