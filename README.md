@@ -18,7 +18,7 @@ De cette manière nous pouvons avoir un tableau dynamique pour lire n'importe qu
 
 Ensuite grace au compteur et la présence d'un caractère dans le texte on pourra calculer la probabilité, arrondi à 10<sup>-6</sup>, d'avoir ce caractère ainsi que l'entropie de l'alphabet générée.
 
-#### 1. Probabilité d'occurence de chaque lettre de l'alphabée
+#### 1. Probabilité d'occurence de chaque lettre de l'alphabet
 
 Voici ce que retourne le tableau *(nous avons choisi de ne mettre que les première lignes du tableau afin de simplifier la présentation)*
 
@@ -36,7 +36,9 @@ Voici ce que retourne le tableau *(nous avons choisi de ne mettre que les premi�
 ['o', 1022, 0.042765084944346804]
 ```
 
-#### 2. Entropie de l'alphabée
+Il y a 23398 caractères.
+
+#### 2. Entropie de l'alphabet
 
 Grace à ce tableau, et à notre code nous pouvons calculer l'entropie grace à la formule suivante : 
 
@@ -51,6 +53,12 @@ L'entropie de notre alphabet est de :  4.3880255630216025
 L'unité de notre entropie est : bits d'info/caractère.
 
 #### 3. Taille du fichier en octets
+
+L'entropie de notre alphabet est d'environ 4.39, on a donc 
+
+$$
+4.39*23398 = 102717.22 bits = 12839.625 octets = 12.84 ko
+$$
 
 #### 4. Algorithme de codage binaire
 
