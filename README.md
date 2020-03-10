@@ -87,3 +87,7 @@ Un pixel à une entropie moyenne de 7,4455... hors un pixel est sur 2 dimensions
 ```bash
 résultat : 3.72277624259281
 ```
+
+On peut donc en conclure qu'il y a donc plus d'information dans notre alphabet que dans l'image.
+
+
