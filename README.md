@@ -20,7 +20,7 @@ Ensuite grace à la présence d'un caractère et le nombre total de caractère d
 
 #### 1. Probabilité d'occurence de chaque lettre de l'alphabet
 
-Voici ce que retourne le tableau *(nous avons choisi de ne mettre que les première lignes du tableau afin de simplifier la présentation)*
+Voici ce que retourne le tableau, nous avons choisi de ne mettre que les première lignes du tableau afin de simplifier la présentation.
 
 ```bash
 [caractère, Nb occurence, probabilité]
