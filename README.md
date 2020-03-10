@@ -68,6 +68,8 @@ Grâce à un petit algorithme en python, nous avons fait passé la taille du tex
 
 #### 0. Introduction
 
+L'algorithme que nous avons utilisé dans la partie précédente s'appuie sur un parcours de tableau où chaque élément du tableau est un caractère de notre alphabet. Pour calculer l'entropie de l'image nous avons placé les valeurs du fichier Lena_gray.raw dans un tableau afin de pouvoir lancer notre algorithme de la même manière que précédement et ainsi pouvoir calculer l'entropie de l'image.
+
 #### 1. Estimation de l'entropie et comparaison avec celle du texte
 
 ```bash
@@ -90,6 +92,4 @@ Un pixel à une entropie moyenne de 7,4455... hors un pixel est sur 2 dimensions
 résultat : 3.72277624259281
 ```
 
-On peut donc en conclure qu'il y a donc plus d'information dans notre alphabet que dans l'image en noir et blanc de lena.
-
-
+On peut donc en conclure qu'il y a donc plus d'information dans notre alphabet que dans l'image en noir et blanc de Lena.
