@@ -62,6 +62,8 @@ $$
 
 #### 4. Algorithme de codage binaire
 
+Grâce à un petit algorithme en python, nous avons fait passé la taille du texte de 25 467 octets à 13 904 octets. Soit une compression de facteur d'environ 1,83.
+
 ### II. Entroprie d'une image
 
 #### 0. Introduction
