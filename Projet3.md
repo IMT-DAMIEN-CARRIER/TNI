@@ -10,6 +10,16 @@
 
 #### 1. Combien de *paquets* contient chaque ligne ?
 
+Nous sommes contraint de faire des *paquets* de 8 pixels.
+
+On sait aussi qu'il y a 512 pixels par ligne, donc : 
+
+$$
+\frac{512}{8} = 64
+$$
+
+Il y a donc 64 paquets par ligne.
+
 #### 2. Avec le modèle de probabilité de l'image, *taguez* chaque paquet en construisant un codeur arithmétique
 
 #### 3. Utiliser un code binaire pour chaque tag et calculer le nombre total d'octets de cette représentation
