@@ -22,6 +22,12 @@ Il y a donc 64 paquets par ligne.
 
 #### 2. Avec le modèle de probabilité de l'image, *taguez* chaque paquet en construisant un codeur arithmétique
 
+En reprenant le fichier raw construit lors du projet un, nous allons construire le TAG pour les 32768 paquets.
+
+$$
+512*64 = 32768
+$$
+
 #### 3. Utiliser un code binaire pour chaque tag et calculer le nombre total d'octets de cette représentation
 
 #### 4. Comparez la taille du fichier binaire ainsi obtenu à la taille du fichier original
