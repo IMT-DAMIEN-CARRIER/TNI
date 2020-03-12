@@ -67,7 +67,7 @@ def openProbasFile():
     texte = f.read()
     tabTexte = texte.split(" ")
     tab = writeProba(len(tabTexte), calcul(tabTexte))
-    tab = sorted(tab, key=lambda x: -x[1])
+    tab = sorted(tab, key=lambda x: int(x[0]))
     # printtab(tab)
     f.close()
     return tab
