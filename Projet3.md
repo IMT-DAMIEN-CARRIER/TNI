@@ -30,6 +30,8 @@ $$
 
 #### 3. Utiliser un code binaire pour chaque tag et calculer le nombre total d'octets de cette représentation
 
+On a trouvé qu'il y avait 256 états de pixels différents pour notre image.
+
 #### 4. Comparez la taille du fichier binaire ainsi obtenu à la taille du fichier original
 
 #### 5. Estimer le taux de compression de votre codeur pour cette image
