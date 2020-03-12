@@ -20,7 +20,7 @@ Ensuite grace à la présence d'un caractère et le nombre total de caractère d
 
 #### 1. Probabilité d'occurence de chaque lettre de l'alphabet
 
-Voici ce que retourne le tableau, nous avons choisi de ne mettre que les première lignes du tableau afin de simplifier la présentation.
+Voici ce que retourne le tableau *(nous avons choisi de ne mettre que les première lignes du tableau afin de simplifier la présentation)*
 
 ```bash
 [caractère, Nb occurence, probabilité]
@@ -62,14 +62,6 @@ $$
 
 #### 4. Algorithme de codage binaire
 
-Grâce à un petit algorithme en python, nous avons fait passé la taille du texte de 25 467 octets à 13 904 octets. 
-
-$$
-\frac{25467}{13904} = 1.83
-$$
-
-Soit une compression de facteur d'environ 1.83
-
 ### II. Entroprie d'une image
 
 #### 0. Introduction
@@ -98,4 +90,4 @@ Un pixel à une entropie moyenne de 7,4455... hors un pixel est sur 2 dimensions
 résultat : 3.72277624259281
 ```
 
-On peut donc en conclure qu'il y a donc plus d'information dans notre alphabet que dans l'image en noir et blanc de Lena.
+On peut donc en conclure qu'il y a donc plus d'information dans notre alphabet que dans l'image en noir et blanc de lena. 

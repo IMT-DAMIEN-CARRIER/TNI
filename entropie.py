@@ -1,14 +1,6 @@
-# import Pillow
-"""
-import matplotlib.image as mpimg
-import numpy as np
-img = mpimg.imread("lena_gray.")
-
-if img.dtype == np.float32: # Si le résultat n'est pas un tableau d'entiers
-    img = (img * 255).astype(np.uint8)
-image2 = np.copy(img)
-
-print(image2.shape)"""
+from calcul import *
+from scipy import *
+from numpy import *
 
 def openFile():
     f = open(".\\lena_gray.raw")
@@ -16,4 +8,30 @@ def openFile():
     texte = f.read()
     print(texte)
     f.close()
-openFile()
+    return texte
+# openFile()
+
+tabPixel = openRawFile()
+tabProbas = openProbasFile()
+
+printtab(tabProbas)  # TODO : renvoyer le tableau des probas trié par ordre croissant des numéros d'états
+
+def tableauSequence():
+    """
+    Crée un tableau des séquences de 8 elements
+    :return:
+    """
+    tabSeq = []
+    print("Début codeur")
+    for c in range(0, len(tabPixel), 8):
+        sequence = []
+        for i in range(0, 8):
+            # print("     c + i : " + str(c+i) + " alors que tabPixel fait " + str(len(tabPixel)))
+            if (c+i) < len(tabPixel):
+                sequence.append(tabPixel[c+i])
+        tabSeq.append(sequence)
+    return tabSeq
+# tableauSequence()
+
+def fonctionCumulative():
+    pass

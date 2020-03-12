@@ -8,9 +8,9 @@
 
 #### 0. Introduction
 
-
-
 #### 1. Combien de *paquets* contient chaque ligne ?
+
+chaque ligne étant composée de 512 pixels, il nous est imposé de travailler avec des paquets de 8 pixels donc chaque ligne contient 64 paquets puisque 512/8=64.
 
 #### 2. Avec le modèle de probabilité de l'image, *taguez* chaque paquet en construisant un codeur arithmétique
 
