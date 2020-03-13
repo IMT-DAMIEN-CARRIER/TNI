@@ -57,7 +57,18 @@ def openRawFile():
     tabTexte = texte.split(" ")
     tab = writeProba(len(tabTexte), calcul(tabTexte))
     tab = sorted(tab, key=lambda x: -x[1])
-    printtab(tab)
+    # printtab(tab)
     f.close()
+    return tabTexte
 
-openRawFile()
+
+def openProbasFile():
+    f = open(".\\lena_gray.raw", encoding="utf-8")
+    texte = f.read()
+    tabTexte = texte.split(" ")
+    tab = writeProba(len(tabTexte), calcul(tabTexte))
+    tab = sorted(tab, key=lambda x: int(x[0]))
+    # printtab(tab)
+    f.close()
+    return tab
+# openRawFile()
