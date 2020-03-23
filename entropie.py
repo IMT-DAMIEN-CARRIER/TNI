@@ -1,5 +1,4 @@
 from calcul import *
-from scipy import *
 from numpy import *
 
 def openFile():

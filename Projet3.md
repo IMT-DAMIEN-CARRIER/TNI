@@ -30,8 +30,7 @@ $$
 
 #### 3. Utiliser un code binaire pour chaque tag et calculer le nombre total d'octets de cette représentation
 
-On a trouvé qu'il y avait 256 états de pixels différents pour notre image.
-
+il y a 32 768 tags flottants dans notre image, un flottant faisant 8 octets, notre image binaire pèse donc 8 * 32768 = 262 144 octets. 
 #### 4. Comparez la taille du fichier binaire ainsi obtenu à la taille du fichier original
 
 Notre fichier initial fait 889Ko et le fichier final compressé fait 250Ko, on a donc bien réalisé une compression à l'aide de l'algorithme.
