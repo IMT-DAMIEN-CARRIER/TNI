@@ -39,3 +39,9 @@ Notre fichier initial fait 889Ko et le fichier final compresser fait 250Ko, on a
 ![](/Users/damien/Desktop/IMT/1A/TNI/tniHttps/Compression.png)
 
 #### 5. Estimer le taux de compression de votre codeur pour cette image
+
+$$
+1 - \frac{889}{250} = 0,719
+$$
+
+Nous avons donc un taux de compression de 71,9%.
