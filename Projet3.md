@@ -10,7 +10,7 @@
 
 #### 1. Combien de *paquets* contient chaque ligne ?
 
-Nous sommes contraint de faire des *paquets* de 8 pixels.
+Nous sommes contrains de faire des *paquets* de 8 pixels.
 
 On sait aussi qu'il y a 512 pixels par ligne, donc : 
 
@@ -34,9 +34,9 @@ On a trouvé qu'il y avait 256 états de pixels différents pour notre image.
 
 #### 4. Comparez la taille du fichier binaire ainsi obtenu à la taille du fichier original
 
-Notre fichier initial fait 889Ko et le fichier final compresser fait 250Ko, on a donc bien réaliser une compression à l'aide de l'algorithme.
+Notre fichier initial fait 889Ko et le fichier final compressé fait 250Ko, on a donc bien réalisé une compression à l'aide de l'algorithme.
 
-![](/Users/damien/Desktop/IMT/1A/TNI/tniHttps/Compression.png)
+![](Compression.png)
 
 #### 5. Estimer le taux de compression de votre codeur pour cette image
 
